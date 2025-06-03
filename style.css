@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #2a9d8f; /* Teal */
+    --secondary-color: #264653; /* Dark Blue/Green */
+    --accent-color: #e9c46a; /* Yellow */
+    --background-color: #f4f4f4; /* Light Gray */
+    --text-color: #333333; /* Dark Gray */
+    --light-gray: #cccccc;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+    min-height: 70vh; /* Ensure main content pushes footer down */
+}
+
+footer {
+    background-color: var(--text-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Basic responsive design for smaller screens */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
