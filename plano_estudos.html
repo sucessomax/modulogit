@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Plano de Estudos - Mind</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mind - Assistente de Estudos</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Painel de Controle</a></li>
+            <li><a href="materiais.html">Materiais de Estudo</a></li>
+            <li><a href="progresso.html">Meu Progresso</a></li>
+            <li><a href="plano_estudos.html">Plano de Estudos</a></li>
+            <li><a href="login.html">Login/Cadastro</a></li>
+        </ul>
+    </nav>
+
+    <main class="page-container">
+        <section id="plano-estudos-detalhado" class="content-section">
+            <h2>Meu Plano de Estudos Semanal</h2>
+
+            <div class="plano-controles">
+                <button id="semana-anterior">&lt; Semana Anterior</button>
+                <h3>Semana Atual: 10/Dez - 16/Dez</h3>
+                <button id="proxima-semana">Próxima Semana &gt;</button>
+            </div>
+
+            <div class="plano-dia-a-dia">
+                <!-- Dia 1: Segunda-feira -->
+                <div class="dia-plano">
+                    <h4>Segunda-feira (10/Dez)</h4>
+                    <ul class="tarefas-dia">
+                        <li class="tarefa-concluida">
+                            <span class="tarefa-horario">08:00 - 09:30:</span>
+                            <span class="tarefa-descricao">Revisar Direito Constitucional - Art. 5º</span>
+                            <span class="tarefa-status">(Concluído)</span>
+                        </li>
+                        <li class="tarefa-pendente">
+                            <span class="tarefa-horario">09:45 - 11:00:</span>
+                            <span class="tarefa-descricao">Videoaula Português - Crase</span>
+                            <span class="tarefa-status">(Pendente)</span>
+                        </li>
+                        <li class="tarefa-pendente">
+                            <span class="tarefa-horario">14:00 - 16:00:</span>
+                            <span class="tarefa-descricao">Resolver Questões - Informática (Hardware)</span>
+                            <span class="tarefa-status">(Pendente)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Dia 2: Terça-feira -->
+                <div class="dia-plano">
+                    <h4>Terça-feira (11/Dez)</h4>
+                    <ul class="tarefas-dia">
+                        <li class="tarefa-pendente">
+                            <span class="tarefa-horario">08:00 - 10:00:</span>
+                            <span class="tarefa-descricao">Estudar Lei 8.112 - Regime Disciplinar</span>
+                            <span class="tarefa-status">(Pendente)</span>
+                        </li>
+                        <li class="tarefa-bloqueada">
+                            <span class="tarefa-horario">10:15 - 11:30:</span>
+                            <span class="tarefa-descricao">Simulado Rápido - Direito Administrativo</span>
+                            <span class="tarefa-status">(Bloqueado - Requer Conclusão Anterior)</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Adicionar mais dias conforme necessário -->
+                 <div class="dia-plano">
+                    <h4>Quarta-feira (12/Dez)</h4>
+                    <ul class="tarefas-dia">
+                        <li class="tarefa-pendente">
+                            <span class="tarefa-horario">09:00 - 11:00:</span>
+                            <span class="tarefa-descricao">Raciocínio Lógico - Proposições</span>
+                            <span class="tarefa-status">(Pendente)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Mind - Todos os direitos reservados.</p>
+    </footer>
+    <!-- <script src="plano_estudos.js"></script> --> <!-- For future interactivity -->
+</body>
+</html>

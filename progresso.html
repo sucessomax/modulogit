@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Progresso - Mind</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mind - Assistente de Estudos</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Painel de Controle</a></li>
+            <li><a href="materiais.html">Materiais de Estudo</a></li>
+            <li><a href="progresso.html">Meu Progresso</a></li>
+            <li><a href="plano_estudos.html">Plano de Estudos</a></li>
+            <li><a href="login.html">Login/Cadastro</a></li>
+        </ul>
+    </nav>
+
+    <main class="page-container">
+        <section id="progresso-detalhado" class="content-section">
+            <h2>Meu Progresso Detalhado</h2>
+
+            <div class="progresso-metricas-gerais">
+                <div class="metrica-card">
+                    <h4>Total de Horas Estudadas</h4>
+                    <p class="metrica-valor">78 horas</p>
+                </div>
+                <div class="metrica-card">
+                    <h4>Matérias Iniciadas</h4>
+                    <p class="metrica-valor">8</p>
+                </div>
+                <div class="metrica-card">
+                    <h4>Matérias Concluídas</h4>
+                    <p class="metrica-valor">3</p>
+                </div>
+                <div class="metrica-card">
+                    <h4>Simulados Realizados</h4>
+                    <p class="metrica-valor">5</p>
+                </div>
+            </div>
+
+            <h3>Progresso por Matéria</h3>
+            <div class="progresso-materias-lista">
+                <!-- Matéria 1 -->
+                <div class="materia-progresso-item">
+                    <div class="materia-info">
+                        <h4>Direito Constitucional</h4>
+                        <p>Status: Em Andamento</p>
+                    </div>
+                    <div class="barra-progresso-container">
+                        <div class="barra-progresso" style="width: 75%;">
+                            75%
+                        </div>
+                    </div>
+                </div>
+                <!-- Matéria 2 -->
+                <div class="materia-progresso-item">
+                    <div class="materia-info">
+                        <h4>Português Instrumental</h4>
+                        <p>Status: Concluído</p>
+                    </div>
+                    <div class="barra-progresso-container">
+                        <div class="barra-progresso" style="width: 100%; background-color: var(--primary-color);">
+                            100%
+                        </div>
+                    </div>
+                </div>
+                <!-- Matéria 3 -->
+                <div class="materia-progresso-item">
+                    <div class="materia-info">
+                        <h4>Informática Básica</h4>
+                        <p>Status: Não Iniciado</p>
+                    </div>
+                    <div class="barra-progresso-container">
+                        <div class="barra-progresso" style="width: 10%;">
+                            10%
+                        </div>
+                    </div>
+                </div>
+                 <!-- Matéria 4 -->
+                <div class="materia-progresso-item">
+                    <div class="materia-info">
+                        <h4>Direito Administrativo</h4>
+                        <p>Status: Em Andamento</p>
+                    </div>
+                    <div class="barra-progresso-container">
+                        <div class="barra-progresso" style="width: 40%;">
+                            40%
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Histórico de Atividades Recentes</h3>
+            <ul class="historico-atividades">
+                <li><span>Hoje:</span> Assistiu videoaula "Crimes Hediondos" - 45 min.</li>
+                <li><span>Ontem:</span> Resolveu 20 questões de Raciocínio Lógico - 60 min.</li>
+                <li><span>Anteontem:</span> Leu artigo "Nova Lei de Licitações" - 90 min.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Mind - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

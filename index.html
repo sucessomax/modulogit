@@ -1,1 +1,71 @@
-qualquer conteudo
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind - Assistente de Estudos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mind - Assistente de Estudos</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Painel de Controle</a></li>
+            <li><a href="materiais.html">Materiais de Estudo</a></li>
+            <li><a href="progresso.html">Meu Progresso</a></li>
+            <li><a href="plano_estudos.html">Plano de Estudos</a></li>
+            <li><a href="login.html">Login/Cadastro</a></li>
+        </ul>
+    </nav>
+
+    <main class="dashboard">
+        <section id="bem-vindo" class="dashboard-section">
+            <h2>Bem-vindo(a) de volta, [Nome do Usuário]!</h2>
+            <p>Seu painel de estudos está pronto para mais uma sessão produtiva.</p>
+        </section>
+
+        <div class="dashboard-grid">
+            <section id="resumo-diario" class="dashboard-card">
+                <h3>Resumo Diário</h3>
+                <p><strong>Meta de hoje:</strong> Revisar Direito Constitucional</p>
+                <p><strong>Tempo estudado hoje:</strong> 45min</p>
+                <p><strong>Progresso na meta:</strong> 30%</p>
+            </section>
+
+            <section id="recomendacoes" class="dashboard-card">
+                <h3>Recomendações para Você</h3>
+                <ul>
+                    <li><a href="#">Artigo: As últimas atualizações na Lei 8.112</a></li>
+                    <li><a href="#">Videoaula: Crimes contra a Administração Pública</a></li>
+                    <li><a href="#">Questões: Direito Administrativo - CESPE 2023</a></li>
+                </ul>
+                <a href="#" class="btn-ver-mais">Ver todas as recomendações</a>
+            </section>
+
+            <section id="progresso-geral" class="dashboard-card">
+                <h3>Meu Progresso Geral</h3>
+                <p><strong>Matérias concluídas:</strong> 3 de 10</p>
+                <p><strong>Horas totais de estudo:</strong> 25 horas</p>
+                <p><strong>Próxima meta:</strong> Concluir Português Instrumental</p>
+            </section>
+
+            <section id="atalhos-rapidos" class="dashboard-card">
+                <h3>Acesso Rápido</h3>
+                <ul>
+                    <li><a href="#">Iniciar novo ciclo de estudos</a></li>
+                    <li><a href="#">Simulados</a></li>
+                    <li><a href="#">Meu Plano de Estudos</a></li>
+                    <li><a href="#">Configurações da Conta</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Mind - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

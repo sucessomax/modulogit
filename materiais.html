@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materiais de Estudo - Mind</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Mind - Assistente de Estudos</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Painel de Controle</a></li>
+            <li><a href="materiais.html">Materiais de Estudo</a></li>
+            <li><a href="progresso.html">Meu Progresso</a></li>
+            <li><a href="plano_estudos.html">Plano de Estudos</a></li>
+            <li><a href="login.html">Login/Cadastro</a></li>
+        </ul>
+    </nav>
+
+    <main class="page-container">
+        <section id="lista-materiais" class="content-section">
+            <h2>Materiais de Estudo Disponíveis</h2>
+
+            <div class="filtros-materiais">
+                <label for="filtro-categoria">Filtrar por Categoria:</label>
+                <select id="filtro-categoria" name="categoria">
+                    <option value="todos">Todas</option>
+                    <option value="direito">Direito</option>
+                    <option value="portugues">Português</option>
+                    <option value="informatica">Informática</option>
+                    <option value="raciocinio-logico">Raciocínio Lógico</option>
+                </select>
+
+                <label for="filtro-tipo">Filtrar por Tipo:</label>
+                <select id="filtro-tipo" name="tipo">
+                    <option value="todos">Todos</option>
+                    <option value="artigo">Artigos</option>
+                    <option value="video">Videoaulas</option>
+                    <option value="questoes">Questões</option>
+                </select>
+            </div>
+
+            <div class="materiais-grid">
+                <!-- Mock Data Item 1 -->
+                <div class="material-card" data-categoria="direito" data-tipo="artigo">
+                    <img src="https://via.placeholder.com/300x150/2a9d8f/ffffff?text=Direito+Admin" alt="Thumbnail Direito Administrativo">
+                    <h3>Princípios do Direito Administrativo</h3>
+                    <p class="categoria-tag">Direito</p>
+                    <p>Um resumo completo sobre os princípios basilares do Direito Administrativo para concursos.</p>
+                    <a href="#" class="btn-acessar-material">Acessar Material</a>
+                </div>
+
+                <!-- Mock Data Item 2 -->
+                <div class="material-card" data-categoria="portugues" data-tipo="video">
+                    <img src="https://via.placeholder.com/300x150/e9c46a/000000?text=Português" alt="Thumbnail Concordância Verbal">
+                    <h3>Concordância Verbal e Nominal</h3>
+                    <p class="categoria-tag">Português</p>
+                    <p>Videoaula explicativa com exemplos práticos sobre concordância verbal e nominal.</p>
+                    <a href="#" class="btn-acessar-material">Assistir Vídeo</a>
+                </div>
+
+                <!-- Mock Data Item 3 -->
+                <div class="material-card" data-categoria="informatica" data-tipo="questoes">
+                    <img src="https://via.placeholder.com/300x150/264653/ffffff?text=Informática" alt="Thumbnail Segurança da Informação">
+                    <h3>Segurança da Informação - Questões</h3>
+                    <p class="categoria-tag">Informática</p>
+                    <p>Banco de questões sobre Segurança da Informação com gabarito comentado.</p>
+                    <a href="#" class="btn-acessar-material">Resolver Questões</a>
+                </div>
+
+                <!-- Mock Data Item 4 -->
+                <div class="material-card" data-categoria="direito" data-tipo="video">
+                    <img src="https://via.placeholder.com/300x150/2a9d8f/ffffff?text=Direito+Const" alt="Thumbnail Controle de Constitucionalidade">
+                    <h3>Controle de Constitucionalidade</h3>
+                    <p class="categoria-tag">Direito</p>
+                    <p>Entenda o Controle de Constitucionalidade de forma descomplicada.</p>
+                    <a href="#" class="btn-acessar-material">Assistir Vídeo</a>
+                </div>
+                 <!-- Mock Data Item 5 -->
+                <div class="material-card" data-categoria="raciocinio-logico" data-tipo="artigo">
+                    <img src="https://via.placeholder.com/300x150/f4a261/000000?text=Raciocínio+Lógico" alt="Thumbnail Proposições Lógicas">
+                    <h3>Proposições Lógicas e Tabela Verdade</h3>
+                    <p class="categoria-tag">Raciocínio Lógico</p>
+                    <p>Artigo detalhado sobre proposições, conectivos e tabela verdade.</p>
+                    <a href="#" class="btn-acessar-material">Acessar Material</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Mind - Todos os direitos reservados.</p>
+    </footer>
+    <script src="filtros.js"></script> <!-- We'll create this for filtering logic -->
+</body>
+</html>
